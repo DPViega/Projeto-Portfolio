@@ -64,18 +64,18 @@ const Projects = () => {
     <section id="projetos" ref={sectionRef} className="relative py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Título */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display mb-4">
             <span className="text-gradient">Projetos</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-cyan-400 mx-auto rounded-full" />
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-muted-foreground px-4">
             Explore alguns dos meus trabalhos mais recentes
           </p>
         </div>
 
         {/* Grid de Projetos */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {projectsData.map((project, index) => (
             <div
               key={project.id}

@@ -24,23 +24,23 @@ const Hero = () => {
 
       <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-glass rounded-full border border-primary/30">
-          <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-          <span className="text-sm text-muted-foreground">Disponível para projetos</span>
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 bg-glass rounded-full border border-primary/30 text-xs sm:text-sm sm:px-4 sm:py-2">
+          <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-primary animate-pulse" />
+          <span className="text-muted-foreground">Disponível para projetos</span>
         </div>
 
         {/* Nome com efeito */}
-        <h1 className="text-6xl md:text-8xl font-bold mb-4 font-display">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-3 sm:mb-4 font-display">
           <span className="text-gradient">Filipe Gabriel</span>
         </h1>
 
         {/* Título */}
-        <p className="text-2xl md:text-3xl mb-6 text-muted-foreground font-light">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-6 text-muted-foreground font-light">
           Desenvolvedor e Criador de Projetos
         </p>
 
         {/* Descrição */}
-        <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-12">
+        <p className="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-12 px-2">
           Transformando ideias em experiências digitais inovadoras através de código limpo e design futurista
         </p>
 

@@ -2,12 +2,12 @@ import { Code2, Database, Globe, Palette, Rocket, Zap } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const skills = [
-  { name: "HTML", icon: Globe, level: 30 },
-  { name: "CSS", icon: Palette, level: 20 },
-  { name: "Python", icon: Rocket, level: 50 },
-  { name: "Power BI", icon: Zap, level: 45 },
-  { name: "JavaScript", icon: Code2, level: 10 },
-  { name: "SQL", icon: Database, level: 0 },
+  { name: "React", icon: Code2, level: 90 },
+  { name: "Next.js", icon: Globe, level: 85 },
+  { name: "Node.js", icon: Database, level: 80 },
+  { name: "TypeScript", icon: Zap, level: 88 },
+  { name: "Tailwind CSS", icon: Palette, level: 95 },
+  { name: "Three.js", icon: Rocket, level: 75 },
 ];
 
 const About = () => {
@@ -45,17 +45,11 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Avatar/Imagem */}
           <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <div className="relative">
-              <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-primary to-cyan-400 p-1 animate-pulse-glow">
-                  <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-                    {/* Coloque a sua foto em public/profile.jpg — fallback para placeholder.svg */}
-                    <img
-                      src="/profile.jpg"
-                      alt="Foto de perfil"
-                      className="w-full h-full object-cover rounded-full"
-                      onError={(e) => { (e.target as HTMLImageElement).src = '/Profile.jpeg'; }}
-                    />
-                  </div>
+            <div className="relative mx-auto w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-cyan-400 p-1 animate-pulse-glow">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">FG</div>
+                </div>
               </div>
               {/* Órbitas ao redor do avatar */}
               <div className="absolute inset-0 animate-spin-slow">
@@ -68,13 +62,13 @@ const About = () => {
           </div>
 
           {/* Descrição */}
-          <div className={`space-y-6 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+          <div className={`space-y-4 sm:space-y-6 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
               Sou um desenvolvedor apaixonado por criar experiências digitais únicas e inovadoras. 
               Com expertise em desenvolvimento web moderno, combino criatividade e tecnologia para 
               transformar ideias em realidade.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
               Meu foco está em construir aplicações performáticas, acessíveis e visualmente impressionantes, 
               sempre buscando as melhores práticas e tecnologias mais recentes do mercado.
             </p>

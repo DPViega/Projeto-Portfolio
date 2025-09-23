@@ -31,28 +31,28 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: MessageCircle, href: "https://wa.me/5551933808998", label: "WhatsApp" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/filipe-gabriel-veiga-de-paula-704b2a302/", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/DPViega?tab=repositories", label: "GitHub" },
+    { icon: MessageCircle, href: "https://wa.me/5511999999999", label: "WhatsApp" },
+    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com", label: "GitHub" },
   ];
 
   return (
     <section id="contato" className="relative py-20 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Título */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display mb-4">
             <span className="text-gradient">Vamos Conversar</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-cyan-400 mx-auto rounded-full" />
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-muted-foreground px-4">
             Tem um projeto em mente? Entre em contato!
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Formulário */}
-          <div className="bg-glass p-8 rounded-xl border border-primary/20">
+          <div className="bg-glass p-4 sm:p-6 md:p-8 rounded-xl border border-primary/20">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -128,10 +128,10 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Email direto</p>
                   <a
-                    href="mailto:viega.dev@yahoo.com"
+                    href="mailto:contato@filipegabriel.com"
                     className="text-lg hover:text-primary transition-colors"
                   >
-                    viega.dev@yahoo.com
+                    contato@filipegabriel.com
                   </a>
                 </div>
               </div>

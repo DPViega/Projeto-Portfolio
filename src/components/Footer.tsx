@@ -3,9 +3,9 @@ import { Github, Instagram, Linkedin, MessageCircle, Heart } from "lucide-react"
 const Footer = () => {
   const socialLinks = [
     { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: MessageCircle, href: "https://wa.me/5511999999999", label: "WhatsApp" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com", label: "GitHub" },
+    { icon: MessageCircle, href: "https://wa.me/5551933808998", label: "WhatsApp" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/filipe-gabriel-veiga-de-paula-704b2a302/", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/DPViega", label: "GitHub" },
   ];
 
   return (

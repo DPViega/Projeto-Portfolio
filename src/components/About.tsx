@@ -1,13 +1,14 @@
 import { Code2, Database, Globe, Palette, Rocket, Zap } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const skills = [
-  { name: "React", icon: Code2, level: 90 },
-  { name: "Next.js", icon: Globe, level: 85 },
-  { name: "Node.js", icon: Database, level: 80 },
-  { name: "TypeScript", icon: Zap, level: 88 },
-  { name: "Tailwind CSS", icon: Palette, level: 95 },
-  { name: "Three.js", icon: Rocket, level: 75 },
+  { name: "JavaScript", icon: Code2, level: 5 },
+  { name: "HTML", icon: Globe, level: 20 },
+  { name: "SQL", icon: Database, level: 0 },
+  { name: "Power BI", icon: Zap, level: 45 },
+  { name: "CSS", icon: Palette, level: 10 },
+  { name: "Python", icon: Rocket, level: 40 },
 ];
 
 const About = () => {
@@ -48,8 +49,11 @@ const About = () => {
             <div className="relative mx-auto w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
               <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-cyan-400 p-1 animate-pulse-glow">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">FG</div>
-                </div>
+                    <Avatar className="w-full h-full rounded-full">
+                      <AvatarImage src="/Profile.jpeg" alt="Filipe Gabriel" />
+                      <AvatarFallback>FG</AvatarFallback>
+                    </Avatar>
+                  </div>
               </div>
               {/* Órbitas ao redor do avatar */}
               <div className="absolute inset-0 animate-spin-slow">

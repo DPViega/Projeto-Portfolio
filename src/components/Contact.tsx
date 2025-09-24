@@ -131,7 +131,7 @@ const Contact = () => {
                     href="mailto:contato@filipegabriel.com"
                     className="text-lg hover:text-primary transition-colors"
                   >
-                    contato@filipegabriel.com
+                    viega.dev@yahoo.com
                   </a>
                 </div>
               </div>

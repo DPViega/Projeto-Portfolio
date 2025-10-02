@@ -9,19 +9,19 @@ const projectsData = [
 		description:
 			"Um painel, (one page), para uma Farmácia de Manipulação, com os produtos, contatos e um chatbot! ",
 		image: "/project1.jpg",
-		tags: ["React", "Node.js", "Lovable", "HTML", "CSS", "Claude.ai", "Python"],
+		tags: ["React", "Node.js", "Lovable", "HTML", "CSS", "Claude.ai", "Node.js", "Python"],
 		github: "https://github.com/DPViega/Life_Simple-Project",
 		demo: "https://life-simple-project.vercel.app/",
 	},
 	{
 		id: 2,
-		title: "Dashboard Analytics",
+		title: "Juntos Pela Fibromialgia",
 		description:
-			"Painel administrativo com visualização de dados em tempo real e gráficos interativos",
+			"Um protótipo, (até então), de um site para a conscientização da Fibromialgia. (A pedido de minha mãe, Priscila Veiga)",
 		image: "/project2.jpg",
-		tags: ["Next.js", "TypeScript", "Tailwind", "Chart.js"],
-		github: "https://github.com",
-		demo: "https://demo.com",
+		tags: ["React", "CSS", "Lovable", "Claude.ai", "HTML"],
+		github: "https://github.com/DPViega/Projeto_Site--Juntos_pela_Fibromialgia",
+		demo: "https://projeto-site-juntos-pela-fibromialg.vercel.app/",
 	},
 	{
 		id: 3,

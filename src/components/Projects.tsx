@@ -21,7 +21,7 @@ const projectsData = [
 		image: "/project2.jpg",
 		tags: ["React", "CSS", "Lovable", "Claude.ai", "HTML"],
 		github: "https://github.com/DPViega/Projeto_Site--Juntos_pela_Fibromialgia",
-		demo: "https://projeto-site-juntos-pela-fibromialg.vercel.app/",
+		demo: "https://juntospelafibromialgia.vercel.app/",
 	},
 	{
 		id: 3,

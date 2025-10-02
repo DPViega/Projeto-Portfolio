@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/wordloop15?igsh=MWo4djZkdHJyeTQ0ag%3D%3D&utm_source=qr", label: "Instagram" },
     { icon: MessageCircle, href: "https://wa.me/5551933808998", label: "WhatsApp" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/filipe-gabriel-veiga-de-paula-704b2a302/", label: "LinkedIn" },
     { icon: Github, href: "https://github.com/DPViega", label: "GitHub" },

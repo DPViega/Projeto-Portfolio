@@ -7,11 +7,11 @@ const projectsData = [
 		id: 1,
 		title: "Farmácia de Manipulação",
 		description:
-			"Um site com os produtos, contatos e um chatbot. Eu e meu grupo, desenvolvemos esse site, pois era um desafio que o nosso mentor nos deu ",
+			"Um painel, (one page), para uma Farmácia de Manipulação, com os produtos, contatos e um chatbot! ",
 		image: "/project1.jpg",
-		tags: ["React", "Node.js", "Lovable", "HTML", "CSS", "Claude.ai"],
-		github: "https://github.com",
-		demo: "https://lifesimple.fwh.is/?i=3",
+		tags: ["React", "Node.js", "Lovable", "HTML", "CSS", "Claude.ai", "Python"],
+		github: "https://github.com/DPViega/Life_Simple-Project",
+		demo: "https://life-simple-project.vercel.app/",
 	},
 	{
 		id: 2,

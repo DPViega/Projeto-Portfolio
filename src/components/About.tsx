@@ -5,9 +5,9 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const skills = [
   { name: "JavaScript", icon: Code2, level: 5 },
   { name: "HTML", icon: Globe, level: 20 },
-  { name: "SQL", icon: Database, level: 0 },
+  { name: "SQL", icon: Database, level: 10 },
   { name: "Power BI", icon: Zap, level: 45 },
-  { name: "CSS", icon: Palette, level: 10 },
+  { name: "CSS", icon: Palette, level: 15 },
   { name: "Python", icon: Rocket, level: 40 },
 ];
 

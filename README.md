@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+# Portfólio Pessoal - Filipe Gabriel
 
-## Project info
+Este é um projeto de portfólio pessoal desenvolvido para apresentar as habilidades, projetos e informações de contato de **Filipe Gabriel**, um Desenvolvedor Full Stack.
 
-**URL**: https://lovable.dev/projects/9edd3469-716d-4984-843a-95051f132d8b
+## 🚀 Tecnologias Utilizadas
 
-## How can I edit this code?
+O projeto foi construído com um stack de tecnologias moderno e eficiente, focado em performance e experiência de desenvolvimento.
 
-There are several ways of editing your application.
+| Categoria | Tecnologia | Descrição |
+| :--- | :--- | :--- |
+| **Framework Frontend** | React | Biblioteca JavaScript para construção de interfaces de usuário. |
+| **Linguagem** | TypeScript | Superset do JavaScript que adiciona tipagem estática, melhorando a robustez do código. |
+| **Estilização** | Tailwind CSS | Framework CSS utilitário para estilização rápida e responsiva. |
+| **Componentes UI** | Shadcn UI | Coleção de componentes de interface de usuário construídos com Radix UI e Tailwind CSS. |
+| **Empacotador/Runtime** | Bun | Runtime JavaScript rápido, empacotador, e gerenciador de pacotes. |
+| **Linter** | ESLint | Ferramenta para identificar e reportar padrões problemáticos encontrados no código. |
 
-**Use Lovable**
+## ⚙️ Instalação e Execução
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9edd3469-716d-4984-843a-95051f132d8b) and start prompting.
+Para configurar e executar o projeto localmente, siga os passos abaixo.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Pré-requisitos
 
-**Use your preferred IDE**
+Certifique-se de ter o **Bun** instalado em sua máquina.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+# Instalação do Bun (se necessário)
+curl -fsSL https://bun.sh/install | bash
 ```
 
-**Edit a file directly in GitHub**
+### Passos
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1.  **Clone o repositório** (ou navegue até a pasta do projeto):
 
-**Use GitHub Codespaces**
+    ```bash
+    # Se for um repositório Git
+    git clone <URL_DO_REPOSITORIO>
+    cd Projeto-Portfolio-main
+    ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+2.  **Instale as dependências:**
 
-## What technologies are used for this project?
+    Utilize o Bun para instalar todas as dependências do projeto.
 
-This project is built with:
+    ```bash
+    bun install
+    ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3.  **Execute o projeto em modo de desenvolvimento:**
 
-## How can I deploy this project?
+    O comando de desenvolvimento iniciará o servidor local.
 
-Simply open [Lovable](https://lovable.dev/projects/9edd3469-716d-4984-843a-95051f132d8b) and click on Share -> Publish.
+    ```bash
+    bun run dev
+    ```
 
-## Can I connect a custom domain to my Lovable project?
+    O portfólio estará acessível em `http://localhost:3000` (ou outra porta indicada pelo Bun).
 
-Yes, you can!
+4.  **Construa para produção:**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+    Para gerar os arquivos estáticos otimizados para produção, utilize o comando de build.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+    ```bash
+    bun run build
+    ```
+
+    Os arquivos de produção serão gerados na pasta `dist/`.
+
+## 📂 Estrutura do Projeto
+
+A estrutura de diretórios segue o padrão de projetos React/Vite com TypeScript:
+
+```
+Projeto-Portfolio-main/
+├── src/
+│   ├── assets/             # Arquivos estáticos como imagens e ícones
+│   ├── components/         # Componentes React reutilizáveis (incluindo Shadcn UI)
+│   ├── lib/                # Funções utilitárias e configurações
+│   ├── pages/              # Componentes de página ou visualizações principais
+│   ├── App.tsx             # Componente principal da aplicação
+│   └── main.tsx            # Ponto de entrada da aplicação (montagem do React)
+├── index.html              # Arquivo HTML principal
+├── tailwind.config.ts      # Configuração do Tailwind CSS
+├── components.json         # Configuração do Shadcn UI
+├── eslint.config.js        # Configuração do ESLint
+├── bun.lockb               # Arquivo de lock do Bun
+└── package.json            # Metadados e scripts do projeto
+```
+
+*(Nota: A estrutura `src/` é inferida com base nas tecnologias utilizadas e nos arquivos `index.html` e `components.json`.)*
+
+## 📝 Licença
+
+Este projeto está sob a licença **MIT** (ou outra licença padrão para projetos de código aberto).
+
+---
+
+**Desenvolvido por:** Manus AI (com base na análise do código-fonte)
+**Proprietário Original:** Filipe Gabriel

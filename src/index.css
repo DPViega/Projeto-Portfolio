@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cores espaciais */
+    --background: 0 0% 5%; /* #0D0D0D - preto espacial */
+    --foreground: 0 0% 100%; /* #FFFFFF - branco puro */
+    
+    --card: 0 0% 10%; /* #1A1A1A - cinza escuro */
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 180 100% 50%; /* #00FFFF - ciano neon */
+    --primary-foreground: 0 0% 5%;
+    
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%; /* #B3B3B3 - cinza claro */
+    
+    --accent: 180 100% 50%; /* ciano */
+    --accent-foreground: 0 0% 5%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 180 100% 50%;
+    
+    --radius: 0.75rem;
+    
+    /* Cores customizadas do tema espacial */
+    --space-black: 0 0% 5%;
+    --space-dark: 0 0% 10%;
+    --neon-cyan: 180 100% 50%;
+    --neon-cyan-dim: 180 100% 40%;
+    --neon-glow: 180 100% 60%;
+    --text-primary: 0 0% 100%;
+    --text-secondary: 0 0% 70%;
+    
+    /* Gradientes espaciais */
+    --gradient-neon: linear-gradient(135deg, hsl(180 100% 50%), hsl(200 100% 60%));
+    --gradient-space: linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 8%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 10% / 0.8), hsl(0 0% 15% / 0.6));
+    
+    /* Sombras e efeitos */
+    --shadow-neon: 0 0 30px hsl(180 100% 50% / 0.5);
+    --shadow-neon-intense: 0 0 50px hsl(180 100% 50% / 0.8);
+    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.5);
+    
+    /* Animações */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Fonte */
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Classes de utilidade customizadas */
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent;
+  }
+  
+  .glow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .glow-neon-intense {
+    box-shadow: var(--shadow-neon-intense);
+  }
+  
+  .bg-glass {
+    @apply backdrop-blur-lg bg-card/20 border border-border/50;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  .animate-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 3s steps(40) 1s 1 normal both;
+  }
+}
+
+/* Animações customizadas */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(180 100% 50% / 0.5);
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(180 100% 50% / 0.8);
+  }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}
